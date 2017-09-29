@@ -1,4 +1,6 @@
-﻿namespace Don.PhoneBookSpa2.EntityFrameworkCore.Seed.Host
+﻿using Don.PhoneBookSpa2.EntityFrameworkCore.Seed.Domain.People;
+
+namespace Don.PhoneBookSpa2.EntityFrameworkCore.Seed.Host
 {
     public class InitialHostDbBuilder
     {
@@ -15,6 +17,8 @@
             new DefaultLanguagesCreator(_context).Create();
             new HostRoleAndUserCreator(_context).Create();
             new DefaultSettingsCreator(_context).Create();
+            //Default domain seed 
+            new DefaultPersonCreator(_context).Create();
 
             _context.SaveChanges();
         }

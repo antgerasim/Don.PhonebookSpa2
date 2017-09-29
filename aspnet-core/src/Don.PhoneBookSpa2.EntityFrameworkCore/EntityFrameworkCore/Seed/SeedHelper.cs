@@ -4,6 +4,7 @@ using Abp.Dependency;
 using Abp.Domain.Uow;
 using Abp.EntityFrameworkCore.Uow;
 using Abp.MultiTenancy;
+using Don.PhoneBookSpa2.EntityFrameworkCore.Seed.Domain.People;
 using Don.PhoneBookSpa2.EntityFrameworkCore.Seed.Host;
 using Don.PhoneBookSpa2.EntityFrameworkCore.Seed.Tenants;
 using Microsoft.EntityFrameworkCore;
